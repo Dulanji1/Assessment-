@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Assessment-
 small to-do task web application
 =======
@@ -42,5 +42,5 @@ docker-compose up --build
 - Database schema: `task` table with id, title, description, completed, created_at.
 - The backend uses Spring Data JPA and PostgreSQL driver.
 
-Enjoy! — Completed deliverable for the assessment.
+Dulanji Cooray — Completed deliverable for the assessment.
 >>>>>>> 6e419c4 (Initial commit)
