@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "2ce99330-8d9a-4090-8af3-16ba9a58e08e",
+		"name": "Assginment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23512729",
+		"_collection_link": "https://orange-escape-442612.postman.co/workspace/Team-Workspace~6efaddfd-2c57-44a5-8301-24939465f0a8/collection/23512729-2ce99330-8d9a-4090-8af3-16ba9a58e08e?action=share&source=collection_link&creator=23512729"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Learn cURL testing\",\r\n    \"description\": \"Test the POST endpoint using cURL\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/tasks \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"title\": \"Learn cURL testing\",\r\n    \"description\": \"Test the POST endpoint using cURL\"\r\n  }'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/tasks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8080/api/tasks \\\r\n  -H \"Content-Type: application/json\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"Buy groceries\", \"description\": \"Milk, Eggs, Bread\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/tasks \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\"title\": \"Buy groceries\", \"description\": \"Milk, Eggs, Bread\"}' \\\r\n  -w \"\\nStatus: %{http_code}\\n\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/tasks/1/done",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/tasks/1/done",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks",
+						"1",
+						"done"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/tasks/1/done \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -w \"\\nStatus: %{http_code}\\n\""
+			},
+			"response": []
+		}
+	]
+}
