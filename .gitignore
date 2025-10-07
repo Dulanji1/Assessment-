@@ -1,6 +1,0 @@
-target/
-*.jar
-*.log
-db_data/
-.idea/
-.vscode/
